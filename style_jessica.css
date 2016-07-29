@@ -1,5 +1,6 @@
 body {
-    background: url("../images/demo/bg_01.jpg") no-repeat;
+/*    background: url("../images/demo/bg_01.jpg") no-repeat;*/
+    background: url("bg_01.jpg") no-repeat;
 }
 .navbar-default {
     background: none;
@@ -34,7 +35,9 @@ figure.effect-bubba:hover img {
 figure.effect-bubba {
     border: 1px solid #ccc;
 }
-
+figure.effect-bubba h2 {
+        opacity: 0;
+}
 .about_left {
     text-align: right;
     letter-spacing: 10px;
@@ -44,6 +47,26 @@ figure.effect-bubba {
 .about_right {
     text-align: left;
 }
+.modal-header {
+        padding: 5px 15px;
+    }
+.modal-title {
+        font-family: khula, Arial, "微軟正黑體", sans-serif;
+        font-size: 16px;
+    }
+.modal-header .close {
+        margin-top: -6px;
+    }
+#back-top a {
+        border-radius: 50%;
+    }
+.section-title p {
+        font-family: khula, Arial, "微軟正黑體", sans-serif;
+    margin: 0px;
+    font-size: 14px;
+    }
+
+
 
 
 /*------------------------------------------------------------------------*/
@@ -70,6 +93,9 @@ figure.effect-bubba {
     section#contact form {
         width: 80%;
     }
+    .portfolio_title {
+    margin-top: 50px;
+    }
     figure.effect-bubba figcaption::before,
     figure.effect-bubba figcaption::after {
         top: 15px;
@@ -89,7 +115,7 @@ figure.effect-bubba {
         font-size: 12px;
     }
     .ot-portfolio-item {
-        padding: 5px 2px;
+        padding: 5px 4px;
     }
     .about_right span {
         display: block;
@@ -98,14 +124,57 @@ figure.effect-bubba {
 }
 
 @media only screen and (max-width: 439px) {
+    .portfolio_title {
+    margin-top: 80px;
+    }
+    figure.effect-bubba figcaption::before,
+    figure.effect-bubba figcaption::after {
+        top: 15px;
+        left: 15px;
+        bottom: 15px;
+        right: 15px;
+    }
     figure.effect-bubba p {
         display: none;
     }
     figure.effect-bubba h2 {
         padding-top: 20%;
+        font-size: 14px;
     }
     .section-title {
     padding:30px 0px 10px 0px;
+    }
+    .ot-portfolio-item {
+        padding: 5px 4px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .about_pic {
+        width: 50%;
+        float: none;
+        margin: 0px;
+    }
+     .portfolio_title {
+    margin-top: 80px;
+    }
+    figure.effect-bubba figcaption::before,
+    figure.effect-bubba figcaption::after {
+        top: 15px;
+        left: 15px;
+        bottom: 15px;
+        right: 15px;
+    }
+    figure.effect-bubba h2 {
+        padding-top: 20%;
+    }
+    figure.effect-bubba p {
+        font-family: khula, Arial, "微軟正黑體", sans-serif;
+        line-height: 18px;
+        margin-top: -10px;
+    }
+    .ot-portfolio-item {
+        padding: 5px 6px;
     }
 }
 
@@ -121,7 +190,25 @@ figure.effect-bubba {
         width: 100%;
     }
     .about ul {
-        margin-top: 15px;
+        margin-top: 0px;
+    }
+    .portfolio_title {
+    margin-top: 80px;
+    }
+    .ot-portfolio-item {
+        padding: 15px 10px;
+    }
+    figure.effect-bubba h2 {
+        opacity: 0;
+        padding-top: 15%;
+        font-family: khula, Arial, "微軟正黑體", sans-serif;
+    }
+    figure.effect-bubba p {
+        font-family: khula, Arial, "微軟正黑體", sans-serif;
+        line-height: 18px;
+    }
+    .section-title {
+        padding-bottom: 10px;
     }
 }
 
@@ -134,7 +221,7 @@ figure.effect-bubba {
         background-position: 0px 0px;
 }
     .about {
-        margin-bottom: 80px;
+        margin-bottom: 0px;
     }
     .about h2 {
         padding-top: 30px;
@@ -142,9 +229,8 @@ figure.effect-bubba {
         margin: 0px 0px 30px 0px;
     }
     .about_pic {
-        width: 48%;
+        width: 60%;
     }
-    /*作品及遮罩*/
     figure.effect-bubba figcaption::before,
     figure.effect-bubba figcaption::after {
         top: 20px;
@@ -164,16 +250,9 @@ figure.effect-bubba {
         font-family: khula, Arial, "微軟正黑體", sans-serif;
         line-height: 18px;
     }
-    .modal-header {
-        padding: 5px 15px;
-    }
-    .modal-title {
-        font-family: khula, Arial, "微軟正黑體", sans-serif;
-        font-size: 16px;
-    }
-    .modal-header .close {
-        margin-top: -6px;
-    }
+    
+    
+    
     .modal-body {
         box-shadow: 0px -2px 5px #ccc;
     }
@@ -181,12 +260,7 @@ figure.effect-bubba {
         padding-bottom: 10px;
     }
     .section-title p {
-        font-family: khula, Arial, "微軟正黑體", sans-serif;
-        font-size: 16px;
-        letter-spacing: 2px;
         margin: 0px 100px;
     }
-    #back-top a {
-        border-radius: 50%;
-    }
+    
 }
